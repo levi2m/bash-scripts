@@ -3,8 +3,8 @@
 # Define the output file
 OUTPUT_FILE="lxc_benchmark_$(date +%Y%m%d%H%M%S).txt"
 
-# Define the ID of the LXC container
-CONTAINER_ID="<container_id>"
+# Prompt the user to enter the ID of the LXC container
+read -p "Enter the ID of the LXC container: " CONTAINER_ID
 
 # Start benchmarking
 echo "Starting LXC benchmark, recording output for 10 seconds..."

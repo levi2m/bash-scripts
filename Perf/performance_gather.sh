@@ -1,10 +1,10 @@
 #!/bin/bash
 
 # Update the package repository
-sudo apt-get update
+apt update
 
 # Install necessary tools
-sudo apt-get install -y iostat htop ping traceroute ffmpeg
+apt install -y sysstat htop ping traceroute ffmpeg
 
 # Define the log file
 log_file="performance_test.log"

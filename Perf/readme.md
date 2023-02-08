@@ -7,8 +7,8 @@ This script will gather performance information for various resources (CPU, RAM,
 ## How to Use 💻
 
 1.  Clone the repository to your Debian LXC container.
-2.  Make the script executable by running `chmod +x performance_test.sh`.
-3.  Run the script with `./performance_test.sh`.
+2.  Make the script executable by running `chmod +x nameofyourscript.sh`.
+3.  Run the script with `./nameofyourscript.sh`.
 
 The script will install necessary tools (`iostat`, `htop`, `ping`, `traceroute`, and `ffmpeg`) if they are not already installed. 💾
 

@@ -31,3 +31,8 @@ curl -X POST -H "Content-Type: text/plain" --data-binary "@extracted_data.csv" <
 ssconvert extracted_data.csv netscan/network_scan.xlsx
 
 echo "Network scan complete and data has been stored in /netscan folder."
+
+# Schedule script to run twice a day in an unattended manner
+(crontab -l 2>/dev/null; echo "0 0,12 * * * /path/to/network_scan.sh") | crontab -
+
+echo "Script has been scheduled to run twice a day in an unattended manner."

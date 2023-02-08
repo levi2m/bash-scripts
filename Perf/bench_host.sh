@@ -3,6 +3,9 @@
 # Define the output file
 OUTPUT_FILE="lxc_benchmark_$(date +%Y%m%d%H%M%S).txt"
 
+# Define the ID of the LXC container
+CONTAINER_ID="<container_id>"
+
 # Start benchmarking
 echo "Starting LXC benchmark, recording output for 10 seconds..."
 start_time=$(date +%s)
@@ -14,7 +17,7 @@ while [ $(date +%s) -lt $end_time ]; do
   current_time=$(date +%s)
 
   # Record the CPU and memory usage of the LXC container
-  lxc_stats=$(lxc info --no-humanize)
+  lxc_stats=$(pct exec $CONTAINER_ID -- bash -c "top -bn 1")
   echo "$current_time: $lxc_stats" >> $OUTPUT_FILE
   
   # Sleep for 1 second before recording the next output

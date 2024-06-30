@@ -4,4 +4,4 @@ This repository contains a collection of scripts to automate and enhance various
 
 ## Contents
 
-- [PCI Passthrough Setup Script](#pci-passthrough-setup-script)
+- [PCI Passthrough Setup Script](#setup_pci_readme.md)

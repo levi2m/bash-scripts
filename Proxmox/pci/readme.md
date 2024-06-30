@@ -26,7 +26,7 @@ The script performs the following tasks:
 ### Step 1: Clone the Repository
 
 ```bash
-git clone https://github.com/levi2m/bash-scripts/proxmox/pci-passthrough-setup.git
+git clone https://github.com/levi2m/bash-scripts/proxmox/pci/pci-passthrough-setup.git
 cd pci-passthrough-setup
 ```
 
